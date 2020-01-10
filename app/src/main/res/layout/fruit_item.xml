@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+
+    >
+<!--    卡片布局效果将每一个item作为一个卡片-->
+    <androidx.cardview.widget.CardView android:layout_height="wrap_content"
+        android:id="@+id/f_view"
+        android:layout_width="wrap_content"
+
+        app:cardElevation="100dp"
+
+        app:cardCornerRadius="4dp"
+
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+
+        >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/fruit_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left" />
+
+    <TextView
+        android:id="@+id/fruit_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/fruit_image"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+</RelativeLayout>
